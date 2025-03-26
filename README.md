@@ -11,7 +11,7 @@ A simple real-time chat application built using **HTML, CSS, and JavaScript**. T
 - 🏃 **Auto-Select First User**: Automatically opens the first chat on page load.
 
 ## 🚀 Live Demo
-[https://vinodraju110123.github.io/Chat-App/](#)   
+[https://vinodraju110123.github.io/Chat-App/]   
 
 ## 🛠️ Installation
 Follow these steps to set up the project locally:
