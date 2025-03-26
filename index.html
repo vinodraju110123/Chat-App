@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chatContainer">
+    <div id="chatSession">
+     <div class="header">
+       <h3>CHAT SESSION</h3>
+       <button id="menu">menu</button>
+       <div id="options" class="hidden" >
+       <div>
+        <select onchange="selectTheme(event)">
+            <option>Change theme</option>
+            <option>black</option>
+            <option>red</option>
+            <option>blue</option>
+            <option>green</option>
+            <option>yellow</option>
+            <option>grey</option>
+            <option>plum</option>
+            <option>navy</option>
+            <option>pink</option>
+            <option>purple</option>
+            <option>coral</option>
+            <option>orange</option>
+            <option>brown</option>
+            <option>cyan</option>
+            <option>maroon</option>
+            <option>olive</option> 
+          </select>
+ </div>
+   <div class="options">
+    <select onchange="changeBg(event)">
+        <option >Change background</option>
+        <option value="https://w0.peakpx.com/wallpaper/818/148/HD-wallpaper-whatsapp-background-cool-dark-green-new-theme-whatsapp.jpg" >image1</option>
+        <option value="https://wallpaperaccess.com/full/1288076.jpg">image2</option>
+        <option value="https://i.pinimg.com/736x/78/1e/21/781e212cb0a891c6d8a3738c525e235d.jpg" >image3</option>
+      </select>
+   </div>   
+</div>
+     </div>
+     <div id="searchBox">
+        <input type="text" id="search" placeholder="Search" onkeyup="filterUsers()">
+     </div>
+
+     <div id="chatSession-details" >
+   <!-- Users-1 -->
+     <div id="users">
+       <div onclick="openChat(this)" class="userslist">
+            <img id="chat-avatar" src="./images/image-1.avif" alt="user">
+            <div>
+                <h6>John Mayers</h6>
+            <span class="time">Hey there! I am using Chat-App</span>
+            </div>
+            <p class="time">10:00 AM</p>
+       </div>
+     </div>
+   <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/antonmy.jpg" alt="user">
+             <div>
+                 <h6>antonmy</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+ 
+      <!-- Users-3 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/chris-hemsworth-poses-during-a-photo-call-for-thor-ragnarok-on-october-15-2017-in-sydney-australia-photo-by-mark-metcalfe_getty-images-for-disney-square.avif" alt="user">
+             <div>
+                 <h6>chris hemsworth</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+      <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/chrish.jpg" alt="user">
+             <div>
+                 <h6>chrish</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+      <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/don.jpg" alt="user">
+             <div>
+                 <h6>don</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+      <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/iron-man-6480952_1280.webp" alt="user">
+             <div>
+                 <h6>iron man</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+      <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/jacson.jpg" alt="user">
+             <div>
+                 <h6>jacson</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+      <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/jermeny runner.webp" alt="user">
+             <div>
+                 <h6>jermeny</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+      <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/Mark-Ruffalo.jpg" alt="user">
+             <div>
+                 <h6>Mark-Ruffalo</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+
+      <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/scarlett-johansson-face-pink-lipstick-actress-wallpaper-preview.jpg" alt="user">
+             <div>
+                 <h6>scarlett</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+
+      <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/stanleee.jpg" alt="user">
+             <div>
+                 <h6>stanleee</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+
+      <!-- Users-2 -->
+     <div id="users">
+        <div onclick="openChat(this)" class="userslist">
+             <img id="chat-avatar" src="./images/tom-renebble.jpg" alt="user">
+             <div>
+                 <h6>tom renebble</h6>
+             <span class="time">Hey there! I am using Chat-App</span>
+             </div>
+             <p class="time">10:00 AM</p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div id="chatDetails" class="hidden">
+        <div class="header">
+            <button id="backButton" onclick="showChatList()">← Back</button>
+            <h3>CHAT DETAILS</h3>
+          </div>
+          <div id="chat-header">
+            <img id="chat-image" src="" alt="">
+            <div class="flex">
+            <h3 id="chat-name"></h3>
+            <p id="chat-role"></p>
+        </div>
+        </div>
+          <div id="chatBox">
+               
+          </div>
+          <div id="messageBox">
+            <p id="message-stats">Characters: 0 | Words: 0</p>
+            <input type="text" id="message" placeholder="Type a message" onkeyup="updateMessageStats()">
+            <button id="send-message" onclick="sendMessage()">Send</button>
+        </div> 
+    </div> 
+</div>      
+<script src="script.js"></script>
+</body>
+</html>
